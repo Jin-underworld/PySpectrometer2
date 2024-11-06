@@ -283,7 +283,8 @@ while True:
 	textoffset = 12
 	thresh = int(thresh) #make sure the data is int.
 	indexes = peakIndexes(intensity, thres=thresh/max(intensity), min_dist=mindist)
-	print(indexes)
+	#uncomment next line to print output
+	#print(indexes)
 	for i in indexes:
 		height = intensity[i]
 		height = 310-height
